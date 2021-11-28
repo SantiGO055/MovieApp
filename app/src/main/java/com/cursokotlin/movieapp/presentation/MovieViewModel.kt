@@ -1,5 +1,8 @@
 package com.cursokotlin.movieapp.presentation
 
-class MovieViewModel {
+import androidx.lifecycle.ViewModel
+
+class MovieViewModel: ViewModel() {
+    //capa entre repositorio y la ui
 
 }
