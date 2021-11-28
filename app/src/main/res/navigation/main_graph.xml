@@ -2,21 +2,17 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_graph"
     app:startDestination="@id/movieFragment">
-
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.cursokotlin.movieapp.MovieFragment"
-        android:label="fragment_movie"
-        tools:layout="@layout/fragment_movie" >
+        android:name="com.cursokotlin.movieapp.ui.movie.MovieFragment"
+        android:label="MovieFragment" >
         <action
             android:id="@+id/action_movieFragment_to_movieDetailFragment"
             app:destination="@id/movieDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/movieDetailFragment"
-        android:name="com.cursokotlin.movieapp.MovieDetailFragment"
-        android:label="fragment_movie_detail"
-        tools:layout="@layout/fragment_movie_detail" />
+        android:name="com.cursokotlin.movieapp.ui.moviedetails.MovieDetailFragment"
+        android:label="MovieDetailFragment" />
 </navigation>

@@ -1,10 +1,11 @@
-package com.cursokotlin.movieapp
+package com.cursokotlin.movieapp.ui.moviedetails
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.cursokotlin.movieapp.R
 import com.cursokotlin.movieapp.databinding.FragmentMovieBinding
 import com.cursokotlin.movieapp.databinding.FragmentMovieDetailBinding
 

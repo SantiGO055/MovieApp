@@ -1,10 +1,11 @@
-package com.cursokotlin.movieapp
+package com.cursokotlin.movieapp.ui.movie
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.cursokotlin.movieapp.R
 import com.cursokotlin.movieapp.databinding.FragmentMovieBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -25,9 +26,10 @@ class MovieFragment : Fragment(R.layout.fragment_movie) {
     //    fragmento cuando esta clase hereda de Fragment y se le pasa el fragmento al constructor
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-
         binding = FragmentMovieBinding.bind(view)
-        binding.progressBar.visibility = View.GONE
+        binding.rlProgresBar.visibility = View.GONE
+
+
         super.onViewCreated(view, savedInstanceState)
     }
 }

@@ -4,14 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MovieFragment">
+    tools:context=".ui.MainActivity">
 
     <RelativeLayout
-        android:id="@+id/progress_bar"
+        android:id="@+id/rlProgresBar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone">
         <ProgressBar
+            android:id="@+id/progress_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true">
@@ -19,7 +20,6 @@
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_movies"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
